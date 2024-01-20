@@ -4,16 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        main {
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
     <title>Trace ID Formatter</title>
 </head>
 
 <body>
-    <h1>Trace ID Formatter</h1>
-    
-    <textarea id="textarea"></textarea>
-    <input id="submitButton" type="submit" />
+    <main>
+        <h1>Trace ID Formatter</h1>
 
-    <p id="result"></p>
+        <textarea id="textarea" rows="10" cols="35" placeholder="Paste Trace IDs" autofocus></textarea>
+        <input id="submitButton" type="submit" />
+
+        <p id="result"></p>
+    </main>
+
 </body>
 
 </html>
