@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace ID Formatter</title>
+</head>
+
+<body>
+    <h1>Trace ID Formatter</h1>
+    
+    <textarea id="textarea"></textarea>
+    <input id="submitButton" type="submit" />
+
+    <p id="result"></p>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("submitButton").addEventListener("click", function () {
+        const traceIds = document.getElementById("textarea").value.split("\n")
+
+        for (let i = 0; i < traceIds.length; i++) {
+            traceIds[i] = '"' + traceIds[i] + '"';
+        }
+
+        document.getElementById("result").innerText = traceIds.join(", ");
+    })
+</script>
