@@ -1,6 +1,6 @@
 # JS Trace ID Formatter
 
-This app converts a list of trace IDs separated by new lines, into a list of double-quoted, comma-separated trace IDs.
+[This app converts a list of trace IDs separated by new lines, into a list of double-quoted, comma-separated trace IDs.](https://woojinv.github.io/jsTraceIdFormatter/)
 
 From this:
 
